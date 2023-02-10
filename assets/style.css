@@ -337,6 +337,7 @@ strong {
 .icon-label {
     margin-top: 0;
     margin-bottom: 0;
+    font-weight: 300;
     color: #555555;
 }
 

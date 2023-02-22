@@ -1,85 +1,43 @@
 .footer {
-    padding: 50px 80px;
+    padding: 0 40px 15px 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center
-}
-
-@media screen and (max-width: 1024px) {
-    .footer {
-        padding: 50px
-    }
-}
-
-@media screen and (max-width: 630px) {
-    .footer {
-        display: block
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .footer {
-        padding: 50px 30px
-    }
-}
-
-.footer-copyright {
-    font-weight: 700;
-    width: 200px
-}
-
-.footer-copyright-legal {
-    font-weight: 400;
-    width: 200px
-
-}
-
-@media screen and (max-width: 630px) {
-    .footer-copyright {
-        width: auto;
-        text-align: center;
-        margin-bottom: 25px
-    }
-}
-
-@media screen and (max-width: 630px) {
-    .footer-copyright .bottom, .footer-copyright .top {
-        display: inline-block;
-        padding-right: 3px
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .footer-copyright .bottom, .footer-copyright .top {
-        display: block
-    }
-}
-
-@media screen and (max-width: 630px) {
-    .footer-links {
-        justify-content: center
-    }
+    align-items: center;
 }
 
 
+.footer-left {
+    font-weight: var(--font-weight-bold);
+}
 
-.footer-links a {
+.footer-left p {
+    margin: 0;
+}
+
+.footer-left a {
+    text-decoration: none;
+    font-weight: var(--font-weight-regular);
+}
+
+
+.footer-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-right svg {
+    width: 25px;
+    height: auto;
+}
+
+.footer-right a {
     position: relative;
-    display: inline-block;
-    color: var(--color-primary) !important;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin: 0 15px;
-    outline: 0
 }
 
-@media screen and (max-width: 1024px) {
-    .footer-links a {
-        margin: 0 10px
-    }
-}
 
-.footer-links a:after {
+.footer-right a:after {
     position: absolute;
     top: 100%;
     left: 0;
@@ -92,15 +50,32 @@
     transform: translateY(-5px)
 }
 
-.footer-links a:focus:after, .footer-links a:hover:after {
+.footer-right a:focus::after, .footer-right a:hover::after {
     height: 2px;
     border-radius: 3px;
     opacity: 1;
     transform: translateY(0)
 }
 
-.footer-links a .text {
-    font-size: .9rem;
-    display: inline;
-    letter-spacing: 1px;
+@media screen and (max-width: 750px) {
+    .footer {
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        order: -1;
+    }
 }
+

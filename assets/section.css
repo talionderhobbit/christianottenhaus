@@ -1,0 +1,111 @@
+
+.section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.section-title {
+    text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+    .section-wrapper {
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .section-wrapper {
+        display: block;
+
+    }
+
+    .section-title {
+        text-align: left;
+        width: auto;
+    }
+}
+
+
+/*.section-content .underline-link {
+    position: relative;
+    display: inline-block;
+}
+
+.section-content .underline-link:after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--color-primary);
+    content: "";
+    opacity: 0;
+    transition: height .3s, opacity .3s, transform .3s;
+    transform: translateY(-5px)
+}
+
+.section-content .underline-link:focus:after, .section-content .underline-link:hover:after {
+    height: 2px;
+    border-radius: 3px;
+    opacity: 1;
+    transform: translateY(-2px)
+}*/
+
+.section-icons {
+    display: grid;
+    grid-template-columns:repeat(4, minmax(100px, 1fr));
+    gap: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .section-icons {
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .section-icons {
+        grid-template-columns:repeat(3, minmax(70px, 1fr));
+        gap: 10px;
+    }
+
+}
+
+.icon-wrapper {
+    transition: all .25s ease-in-out;
+    fill: currentColor;
+    color: var(--color-icon);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    filter: saturate(0) brightness(0);
+    opacity: 0.65;
+}
+
+.icon-wrapper:hover {
+    transform: scale(1.25);
+    color: var(--color-primary);
+    filter: none;
+    opacity: 1;
+}
+
+.icon-wrapper svg {
+    width: 65px;
+    height: auto;
+}
+
+
+.icon-label {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text);
+}
+
+

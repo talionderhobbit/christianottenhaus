@@ -39,19 +39,7 @@
     opacity: 0;
 }
 
-@media screen and (max-width: 800px) {
-    .section-icons {
-        margin-top: 50px;
-    }
-}
 
-
-@media screen and (max-width: 550px) {
-    .section-icons {
-        grid-template-columns:repeat(3, minmax(70px, 1fr));
-        gap: 10px;
-    }
-}
 
 .icon-wrapper {
     transition: all .25s ease-in-out;
@@ -84,4 +72,24 @@
     color: var(--color-text);
 }
 
+@media screen and (max-width: 800px) {
+    .section-icons {
+        margin-top: 50px;
+    }
+
+    .icon-wrapper:hover {
+        transform: inherit;
+        color: inherit;
+        filter: saturate(0) brightness(0);
+        opacity: 0.65;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .section-icons {
+        grid-template-columns:repeat(3, minmax(70px, 1fr));
+        gap: 10px;
+    }
+}
 

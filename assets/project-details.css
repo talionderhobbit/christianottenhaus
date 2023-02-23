@@ -1,8 +1,11 @@
+.project-details .container {
+    margin: 80px auto;
+}
+
 .project-details .wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 75px;
-    margin: 80px 0;
     justify-content: center;
 }
 
@@ -13,7 +16,6 @@
     display: block;
     margin-left: auto;
 }
-
 
 .project-details .subtitle {
     font-size: 1.5rem;
@@ -42,5 +44,31 @@
 
     .project-details img {
         display: none
+    }
+}
+
+
+.project-details .gallery-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (max-width: 750px) {
+    .project-details .gallery img {
+        display: block;
+        width: 120px;
+        margin-left: 0;
+    }
+
+    .project-details .gallery .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project-details .gallery .section-heading {
+        align-items: start;
     }
 }

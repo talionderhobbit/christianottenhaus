@@ -55,7 +55,7 @@
     transform: inherit;
 }
 
-.arrow-link:hover::after {
+.arrow-link:hover::after, .arrow-link:focus::after {
     transform: translateX(7px);
 
     height: 1rem;

@@ -30,7 +30,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: var(--color-background);
-    color: var(--color-text);
+    color: var(--color-on-background);
     font-family: Nunito, sans-serif;
     line-height: 1.5;
     width: 100%;

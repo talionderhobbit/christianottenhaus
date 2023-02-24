@@ -69,7 +69,7 @@
     margin-top: 0;
     margin-bottom: 0;
     font-weight: var(--font-weight-regular);
-    color: var(--color-text);
+    color: var(--color-on-background);
 }
 
 @media screen and (max-width: 800px) {

@@ -10,6 +10,13 @@
     text-align: right;
 }
 
+.section-title h2 {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 1rem;
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 1000px) {
     .section-wrapper {
     }

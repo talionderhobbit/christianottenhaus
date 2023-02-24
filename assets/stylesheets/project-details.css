@@ -83,6 +83,10 @@
     }
 }
 
+.store-badge.project-used {
+    gap: 10px;
+}
+
 .store-badge button {
     background: var(--color-on-background);
     color: var(--color-on-primary);

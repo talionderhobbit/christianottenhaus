@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1440px;
-    margin: 0 auto 100px 0;
+    margin: 0 auto 100px auto;
 }
 
 .intro-text {

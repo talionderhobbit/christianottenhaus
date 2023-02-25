@@ -1,0 +1,31 @@
+#header {
+    display: flex;
+    position: sticky;
+    flex-direction: column;
+    justify-content: center;
+
+    top: 0;
+    background-color: var(--color-background);
+    padding: 0.5rem 1rem;
+
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#back-to-home {
+    margin: 10px auto 10px auto;
+    top: 0;
+    padding: 0.5em 1em;
+    border: 1px solid var(--color-primary);
+    border-radius: 1em;
+}
+
+#back-to-home:hover, #back-to-home:focus {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+}
+
+#back-to-home:hover::after, #back-to-home:focus::after {
+    opacity: 0;
+}

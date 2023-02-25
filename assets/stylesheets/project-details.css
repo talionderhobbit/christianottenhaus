@@ -9,13 +9,14 @@
     justify-content: center;
 }
 
-
-.project-details img {
+.project-details .project-logo {
     position: sticky;
     position: -webkit-sticky;
     top: 1rem;
     margin-bottom: 2rem;
+}
 
+.project-details img {
     width: 250px;
     height: auto;
     object-fit: contain;

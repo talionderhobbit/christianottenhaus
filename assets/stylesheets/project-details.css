@@ -65,11 +65,18 @@
     justify-content: center;
 }
 
+.project-details .gallery img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
 @media screen and (max-width: 750px) {
     .project-details .gallery img {
         display: block;
         width: 120px;
         margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .project-details .gallery .wrapper {

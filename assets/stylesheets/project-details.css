@@ -93,11 +93,11 @@
     }
 }
 
-.store-badge.project-used {
+.project-links.project-used {
     gap: 10px;
 }
 
-.store-badge button {
+.project-links button {
     background: var(--color-on-background);
     color: var(--color-on-primary);
 
@@ -113,6 +113,6 @@
     transition: all .15s ease-in-out;
 }
 
-.store-badge a:focus::after, .store-badge a:hover:after {
+.project-links a:focus::after, .project-links a:hover:after {
     opacity: 0;
 }

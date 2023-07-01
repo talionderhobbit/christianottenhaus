@@ -60,6 +60,10 @@
     }
 }
 
+.project-details .certificate {
+    object-fit: contain;
+    width: 650px;
+}
 
 .project-details .gallery-text {
     display: flex;
@@ -73,6 +77,11 @@
 }
 
 @media screen and (max-width: 750px) {
+    .project-details .certificate {
+        object-fit: contain;
+        width: 300px;
+    }
+
     .project-details .gallery img {
         display: block;
         width: 120px;

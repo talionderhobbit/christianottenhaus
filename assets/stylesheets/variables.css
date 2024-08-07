@@ -1,0 +1,14 @@
+:root {
+    --color-primary: #4AB342;
+    --color-on-primary: #ffffff;
+    --color-on-background: #333333;
+    --color-background: #ffffff;
+    --color-icon: #777777;
+
+    --bp-phone: 750px;
+    --bp-tablet: 1000px;
+
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+
+}
